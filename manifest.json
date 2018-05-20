@@ -1,0 +1,65 @@
+{
+	"name": "Mailtrain",
+	"id": "mailtrain",
+	"packaging_format": 1,
+	"description": {
+		"en": "Mailing List Software,
+		"fr": "Application pour créer des mailing lists"
+	},
+	"version": "1.24.0~ynh1",
+	"url": "https://mailtrain.org/",
+	"license": "free",
+	"maintainer": {
+		"name": "frju365",
+		"email": "abld@abld.info"
+	},
+	"requirements": {
+		"yunohost": ">= 2.7.10"
+	},
+	"multi_instance": true,
+	"services": [
+		"nginx",
+		"mysql"
+	],
+	"arguments": {
+		"install" : [
+			{
+				"name": "domain",
+				"type": "domain",
+				"ask": {
+					"en": "Choose a domain for Mailtrain.",
+					"fr": "Choisissez un domaine pour Mailtrain."
+				},
+				"example": "sub.domain.org"
+			},
+			{
+				"name": "path",
+				"type": "path",
+				"ask": {
+					"en": "Choose a path for Mailtrain",
+					"fr": "Choisissez un chemin pour Mailtrain"
+				},
+				"example": "/pad",
+				"default": "/pad"
+			},
+			{
+				"name": "language",
+				"ask": {
+					"en": "Choose your language",
+					"fr": "Choisissez la langue"
+				},
+				"choices" : ["en", "fr"],
+				"default" : "en"
+			},
+			{
+				"name": "is_public",
+				"type": "boolean",
+				"ask": {
+					"en": "Is it a public website?",
+					"fr": "Est-ce un site public ?"
+				},
+				"default": true
+			}
+		]
+	}
+}
