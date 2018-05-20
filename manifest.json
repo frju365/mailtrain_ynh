@@ -3,7 +3,7 @@
 	"id": "mailtrain",
 	"packaging_format": 1,
 	"description": {
-		"en": "Mailing List Software,
+		"en": "Mailing List Software",
 		"fr": "Application pour créer des mailing lists"
 	},
 	"version": "1.24.0~ynh1",
