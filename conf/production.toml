@@ -58,11 +58,11 @@ level="error"
 
 [www]
 # HTTP port to listen on
-port=PORT
+port=__PORT__
 # HTTP interface to listen on
 host="0.0.0.0"
 # Secret for signing the session ID cookie
-secret="SECRET"
+secret="__SECRET__"
 # Session length in seconds when "remember me" is checked
 remember=2592000 # 30 days
 # logger interface for expressjs morgan
@@ -78,9 +78,9 @@ postsize="2MB"
 
 [mysql]
 host="localhost"
-user="DB_USER"
-password="DB_PASS"
-database="DB_NAME"
+user="__DB_USER__"
+password="__DB_PASS__"
+database="__DB_NAME__"
 # Some installations, eg. MAMP can use a different port (8889)
 # MAMP users should also turn on "Allow network access to MySQL" otherwise MySQL might not be accessible
 port=3306
